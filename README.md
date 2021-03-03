@@ -13,20 +13,23 @@ We currently use it in conjunction with Docker.
 There are only a couple of settings one has to provide to make it work.
 The following config settings are available:
 
-| Config Label        | Internal Name | Value                                         |
-| ------------------- | ------------- | --------------------------------------------- |
-| Access API Token    | accessKey     | string                                        |
-| Secret Access Token | secretKey     | string                                        |
-| Bucket              | bucket        | string                                        |
-| Endpoint            | endPoint      | string                                        |
-| Port                | port          | string                                        |
-| SSL                 | useSSL        | string(true for ssl, anything else for false) |
-| Folder              | folder        | string                                        |
-| isDocker            | isDocker      | bool                                          |
-| Host                | host          | string                                        |
-| overridePath        | overridePath  | string (overrides host settings)              |
+| Config Label        | Internal Name     | Value                                         |
+| ------------------- | -------------     | --------------------------------------------- |
+| Access API Token    | accessKey         | string                                        |
+| Secret Access Token | secretKey         | string                                        |
+| Bucket              | bucket            | string                                        |
+| Endpoint            | endPoint          | string                                        |
+| Port                | port              | string                                        |
+| SSL                 | useSSL            | string(true for ssl, anything else for false) |
+| Folder              | folder            | string                                        |
+| isDocker            | isDocker          | bool                                          |
+| Host                | host              | string                                        |
+| overridePath        | overridePath      | string (overrides host settings)              |
+| UseMinioSSLClient   | useMinioSSLClient | Use MinioSSLClient setting                    |
 
 The thing with the overridePath is, that it enables you to set a proxied image url, so that you can output the images through some kind of image proxy (eg. thumbor or imgproxy).
+
+Adding UseMinioSSLClient Property to use SSL secured Minio Endpoints on the web.
 
 ## Example Hash
 
